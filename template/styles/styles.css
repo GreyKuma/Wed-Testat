@@ -55,6 +55,8 @@ a{
 	font-style: italic;
 	padding: 2px;
 }
+
+
 /* videos */
 .videoWrapper {
 	position: relative;
@@ -115,6 +117,17 @@ p{
 
 .rightAlign{
 	float: right;
+	overflow: auto;
+}
+
+.leftAlign{
+	float: left;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 /* lists */
 
