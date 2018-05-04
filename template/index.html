@@ -287,31 +287,37 @@
 		<h2>Neuen Autor registrieren</h2>
 
 		<form>
-			--Autor--
-			<br>
-			Herr:<input type="radio" name="gender" value="Herr" checked><br>
-			Frau:<input type="radio" name="gender" value="Frau"><br>
-			Name:<input type="text" name="name"><br>
-			E-Mail			[          ]
-			Webseite		[          ]
-			Geburtsdatum	[          ]
-			Nationalität	[ -- Wählen -- v]
-			Switzerland
-			Deutschland
-			Frankreich
-			Italien
-			Österreich
-			Profiltext		[          ]
-			Profilbilder	[ Browse ]
+			<fieldset>
+				<legend>Autor</legend>
+				Herr <input type="radio" name="gender" value="Herr" checked><br>
+				Frau <input type="radio" name="gender" value="Frau"><br>
+				Name <input type="text" name="name"><br>
+				E-Mail <input type="text" name="mail"><br>
+				Webseite <input type="text" name="website"><br>
+				Geburtsdatum <input type="text" name="birthdate"><br>
+				Nationalität <select name="nationality">
+					<option>Schweiz</option>
+					<option>Deutschland</option>
+					<option>Frankreich</option>
+					<option>Italien</option>
+					<option>Österreich</option>
+			</select><br>
+				Profiltext<br> <textarea name="profiletext" cols="100" rows="15"></textarea><br>
+				Profilbilder <input type="file" name="avatar"><br>
+			</fieldset>
 
-			--Rechtliches--
-			[ ] Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
-			[ ] Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
-			[ ] Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
-			eingereichte Medien Bilder nicht manipuliert wurden
 
-			[Account anlegen]
-			[Eingaben zurücksetzen]
+			<fieldset>
+				<legend>Rechtliches</legend>
+				<input type="checkbox" name="law1"> Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin<br>
+				<input type="checkbox" name="law2"> Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin<br>
+				<input type="checkbox" name="law3"> Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
+				eingereichte Medien Bilder nicht manipuliert wurden<br>
+			</fieldset>
+
+
+			<input type="submit" value="Account anlegen">
+			<input type="submit" value="Eingaben zurücksetzen">
 		</form>
 
 

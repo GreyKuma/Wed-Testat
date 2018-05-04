@@ -114,6 +114,9 @@ p{
 	font-size: small;
 	color: #8a8a8a;
 }
+.leftAlign{
+	float: left;
+}
 
 .rightAlign{
 	float: right;
