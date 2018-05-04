@@ -269,63 +269,87 @@
 
 		<h3>8 Taschenrechner suchen nach Modell</h3>
 
+        <form>
+			<input list="trsearch" name="trsearch">
+			<datalist id="trsearch">
+				<option value="Mexico Instrument TI 30"></option>
+				<option value="Mexico Instrument TI 32"></option>
+				<option value="Mexico Instrument D*D"></option>
+				<option value="Casino UX5"></option>
+				<option value="Casino TZZ"></option>
+				<option value="Casino Basic"></option>
+				<option value="HG Calc++"></option>
+				<option value="HG Productive"></option>
+				<option value="HG GO-ON"></option>
+			</datalist>
+            <input type="submit" value="Search">
+        </form>
+
 		[                     ]
-		Mexico Instrument TI 30
-		Mexico Instrument TI 32
-		Mexico Instrument D*D
-		Casino UX5
-		Casino TZZ
-		Casino Basic
-		HG Calc++
-		HG Productive
-		HG GO-ON
+
+
+
+
+
+
+
+
+
 
 		[search]
 
 
 
 		<h2>Neuen Autor registrieren</h2>
+        <!-- TODO Check for complete form -->
+        <!-- TODO Code delete button function-->
 
 		<form>
-			--Autor--
-			<br>
-			Herr:<input type="radio" name="gender" value="Herr" checked><br>
-			Frau:<input type="radio" name="gender" value="Frau"><br>
-			Name:<input type="text" name="name"><br>
-			E-Mail			[          ]
-			Webseite		[          ]
-			Geburtsdatum	[          ]
-			Nationalität	[ -- Wählen -- v]
-			Switzerland
-			Deutschland
-			Frankreich
-			Italien
-			Österreich
-			Profiltext		[          ]
-			Profilbilder	[ Browse ]
+			<fieldset>
+				<legend>Autor</legend>
+				Herr <input type="radio" name="gender" value="Herr" checked required><br>
+				Frau <input type="radio" name="gender" value="Frau" required><br>
+				Name <input type="text" name="name" required><br>
+				E-Mail <input type="text" name="mail" required><br>
+				Webseite <input type="text" name="website"><br>
+				Geburtsdatum <input type="text" name="birthdate" required><br>
+				Nationalität <select name="nationality" required>
+					<option value="" selected hidden>-- Wählen --</option>
+					<option value="ch">Schweiz</option>
+					<option value="de">Deutschland</option>
+					<option value="fr">Frankreich</option>
+					<option value="it">Italien</option>
+					<option value="au">Österreich</option>
+			</select><br>
+				Profiltext<br> <textarea name="profiletext" cols="100" rows="15"></textarea><br>
+				Profilbilder <input type="file" name="avatar"><br>
+			</fieldset>
 
-			--Rechtliches--
-			[ ] Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
-			[ ] Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
-			[ ] Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
-			eingereichte Medien Bilder nicht manipuliert wurden
+			<fieldset>
+				<legend>Rechtliches</legend>
+				<input type="checkbox" name="law1"> Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin<br>
+				<input type="checkbox" name="law2"> Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin<br>
+				<input type="checkbox" name="law3"> Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
+				eingereichte Medien Bilder nicht manipuliert wurden<br>
+			</fieldset>
 
-			[Account anlegen]
-			[Eingaben zurücksetzen]
+
+			<input type="submit" value="Account anlegen">
+			<input type="reset" value="Eingaben zurücksetzen">
 		</form>
 
 
 
-			<footer>
-				Bahnhofstrasse 42,
-				8000 Zürich
+        <footer>
+            <p>Bahnhofstrasse 42,
+                8000 Zürich</p>
 
-				055 444 33 22
-				info@wikipraktika.com
+            <p>055 444 33 22
+                info@wikipraktika.com</p>
 
-				Alle Inhalte von Wikipraktika stehen unter der |https://i.creativecommons.org/l/by-sa/4.0/88x31.png|
-				(http://creativecommons.org/licenses/by-sa/4.0/) Creative Commons Attribution-ShareAlike 4.0 International License
-				(http://creativecommons.org/licenses/by-sa/4.0/) und dürfen nur mit Nennung des Autors weiterverwendet werden.
-			</footer>
-		</body>
+            <p>Alle Inhalte von Wikipraktika stehen unter der <img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/>
+                <a href = "http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+                und dürfen nur mit Nennung des Autors weiterverwendet werden.</p>
+        </footer>
+    </body>
 </html>

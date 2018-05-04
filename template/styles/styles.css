@@ -9,6 +9,8 @@
 }
 
 /* document */
+
+
 body {
 	font-size: 1rem;
 	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
@@ -113,6 +115,9 @@ p{
 .descriptionText{
 	font-size: small;
 	color: #8a8a8a;
+}
+.leftAlign{
+	float: left;
 }
 
 .rightAlign{
