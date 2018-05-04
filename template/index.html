@@ -13,7 +13,6 @@
 	<body>
 		<header>
 			<!-- TODO -->
-            blub
 
 			<h1><img src="../media/logo-wikipraktika.svg"/>Wikipraktika</h1>
 		</header>
@@ -297,23 +296,23 @@
 		<form>
 			<fieldset>
 				<legend>Autor</legend>
-				Herr <input type="radio" name="gender" value="Herr" checked><br>
-				Frau <input type="radio" name="gender" value="Frau"><br>
-				Name <input type="text" name="name"><br>
-				E-Mail <input type="text" name="mail"><br>
+				Herr <input type="radio" name="gender" value="Herr" checked required><br>
+				Frau <input type="radio" name="gender" value="Frau" required><br>
+				Name <input type="text" name="name" required><br>
+				E-Mail <input type="text" name="mail"required><br>
 				Webseite <input type="text" name="website"><br>
-				Geburtsdatum <input type="text" name="birthdate"><br>
-				Nationalität <select name="nationality">
-					<option>Schweiz</option>
-					<option>Deutschland</option>
-					<option>Frankreich</option>
-					<option>Italien</option>
-					<option>Österreich</option>
+				Geburtsdatum <input type="text" name="birthdate" required><br>
+				Nationalität <select name="nationality" required>
+					<option value="" selected hidden>-- Wählen --</option>
+					<option value="ch">Schweiz</option>
+					<option value="de">Deutschland</option>
+					<option value="fr">Frankreich</option>
+					<option value="it">Italien</option>
+					<option value="au">Österreich</option>
 			</select><br>
 				Profiltext<br> <textarea name="profiletext" cols="100" rows="15"></textarea><br>
 				Profilbilder <input type="file" name="avatar"><br>
 			</fieldset>
-
 
 			<fieldset>
 				<legend>Rechtliches</legend>
