@@ -26,8 +26,8 @@ let calculator = function(array){
  */
 window.addEventListener('load', function() {
     let equalFlag = false;
-    window.addEventListener("click", function(e){
-        e = window.event;
+    window.addEventListener("click", function(event){
+        let e = event || window.event;
         let target = e.target;
         let value = target.value;
         let input = document.getElementById("input");
